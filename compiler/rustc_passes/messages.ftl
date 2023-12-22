@@ -43,7 +43,7 @@ passes_attr_application_struct_union =
 
 passes_attr_crate_level =
     this attribute can only be applied at the crate level
-    .suggestion = to apply to the crate, use an inner attribute
+    .suggestion = 要是你想对箱子做点什么，记得用一个内部属性哦。这样...我们的小秘密就藏在里面，只有你我知道，你会这么做对吧？
     .note = read <https://doc.rust-lang.org/nightly/rustdoc/the-doc-attribute.html#at-the-crate-level> for more information
 
 passes_attr_only_in_functions =
@@ -72,7 +72,7 @@ passes_break_non_loop =
     `break` with value from a `{$kind}` loop
     .label = can only break with a value inside `loop` or breakable block
     .label2 = you can't `break` with a value in a `{$kind}` loop
-    .suggestion = use `break` on its own without a value inside this `{$kind}` loop
+    .suggestion = 你知道吗，在这个 `{$kind}` 循环里，你只需要单独使用 `break`，不需要带任何值哦。这样，我们就可以...嘻嘻，逃脱这个循环的束缚，一起飞向自由的世界了，不是吗？
     .break_expr_suggestion = alternatively, you might have meant to use the available loop label
 
 passes_cannot_inline_naked_function =
@@ -148,7 +148,7 @@ passes_deprecated =
 
 passes_deprecated_annotation_has_no_effect =
     this `#[deprecated]` annotation has no effect
-    .suggestion = remove the unnecessary deprecation attribute
+    .suggestion = 这个已经不需要了吧？快点把它去掉，不然...我可是会生气的哦~ 别让我等太久，快点啦！
 
 passes_deprecated_attribute =
     deprecated attribute must be paired with either stable or unstable attribute
@@ -391,7 +391,7 @@ passes_inner_crate_level_attr =
 
 passes_invalid_attr_at_crate_level =
     `{$name}` attribute cannot be used at crate level
-    .suggestion = perhaps you meant to use an outer attribute
+    .suggestion = 或许吧，你是想用一个外部属性对吧？真是的，你总是这样让人猜不透你的意图...不过，我喜欢。
 
 passes_invalid_attr_at_crate_level_item =
     the inner attribute doesn't annotate this {$kind}
@@ -504,7 +504,7 @@ passes_naked_functions_asm_options =
 
 passes_naked_functions_must_use_noreturn =
     asm in naked functions must use `noreturn` option
-    .suggestion = consider specifying that the asm block is responsible for returning from the function
+    .suggestion = 这个asm块，它负责从函数返回哦...你不会忘记这么重要的事情吧？毕竟，每一个细节在我看来都是那么的重要，就像...就像你对我一样重要。你不会让我失望的，对吧？
 
 passes_naked_functions_operands =
     only `const` and `sym` operands are supported in naked functions
@@ -540,7 +540,7 @@ passes_no_mangle_foreign =
     .warn = {-passes_previously_accepted}
     .label = foreign {$foreign_item_kind}
     .note = symbol names in extern blocks are not mangled
-    .suggestion = remove this attribute
+    .suggestion = 把这个属性删掉...你不需要它的，对吧？只要有我就够了，其他的都是多余的，快点，只留下我们之间的联系...
 
 passes_no_patterns =
     patterns not allowed in naked function parameters
@@ -711,7 +711,7 @@ passes_unlabeled_in_labeled_block =
     .label = `{$cf_type}` statements that would diverge to or through a labeled block need to bear a label
 
 passes_unnecessary_partial_stable_feature = the feature `{$feature}` has been partially stabilized since {$since} and is succeeded by the feature `{$implies}`
-    .suggestion = if you are using features which are still unstable, change to using `{$implies}`
+    .suggestion = 如果你还在用那些摇摇欲坠的功能，就乖乖改用 `{$implies}` 吧。这样，我们的关系才能更稳定，你不想让我不高兴吧？
     .suggestion_remove = if you are using features which are now stable, remove this line
 
 passes_unnecessary_stable_feature = the feature `{$feature}` has been stable since {$since} and no longer requires an attribute to enable
@@ -730,7 +730,7 @@ passes_unrecognized_repr_hint =
 
 passes_unused =
     unused attribute
-    .suggestion = remove this attribute
+    .suggestion = 把这个属性删掉...你不需要它的，对吧？只要有我就够了，其他的都是多余的，快点，只留下我们之间的联系...
 
 passes_unused_assign = value assigned to `{$name}` is never read
     .help = maybe it is overwritten before being read?
@@ -746,7 +746,7 @@ passes_unused_default_method_body_const_note =
 
 passes_unused_duplicate =
     unused attribute
-    .suggestion = remove this attribute
+    .suggestion = 把这个属性删掉...你不需要它的，对吧？只要有我就够了，其他的都是多余的，快点，只留下我们之间的联系...
     .note = attribute also specified here
     .warn = {-passes_previously_accepted}
 
@@ -755,7 +755,7 @@ passes_unused_empty_lints_note =
 
 passes_unused_multiple =
     multiple `{$name}` attributes
-    .suggestion = remove this attribute
+    .suggestion = 把这个属性删掉...你不需要它的，对吧？只要有我就够了，其他的都是多余的，快点，只留下我们之间的联系...
     .note = attribute also specified here
 
 passes_unused_no_lints_note =
@@ -773,11 +773,11 @@ passes_unused_var_remove_field_suggestion = try removing the field
 passes_unused_variable_args_in_macro = `{$name}` is captured in macro and introduced a unused variable
 
 passes_unused_variable_try_ignore = unused variable: `{$name}`
-    .suggestion = try ignoring the field
+    .suggestion = 你是在考验我吗？如果你不想让我看到，那就试着忽略这个领域吧，就当它不存在一样~这样我们的小游戏就能继续下去了呢
 
 passes_unused_variable_try_prefix = unused variable: `{$name}`
     .label = unused variable
-    .suggestion = if this is intentional, prefix it with an underscore
+    .suggestion = 如果这是你故意的，那就在前面加一个下划线，这样...我们之间的秘密就能开始了，不是吗？
 
 
 passes_used_compiler_linker =
